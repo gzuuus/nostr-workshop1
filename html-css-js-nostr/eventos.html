@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="header.js"></script>
+    <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+    <script src="events.js"></script>
+</head>
+<header id="header"></header>
+<body>
+    <form id="mi-formulario">
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" name="contenido" rows="4" cols="50"></textarea>
+        <label for="opciones">Kind:</label>
+        <select id="opciones" name="opciones">
+            <option value=1>Kind 1</option>
+            <option value=30023>Kind 30023</option>
+        </select>
+        <button id="enviar" type="button">Enviar</button>
+    </form>
+</body>
+</html>
