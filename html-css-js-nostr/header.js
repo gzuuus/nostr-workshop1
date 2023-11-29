@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h1>Proto nostr</h1>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/articulos.html">Articulos</a></li>
-                    <li><a href="/eventos.html">Eventos</a></li>
-                    <li><a href="/nip07.html">Nip07</a></li>
+                    <li><a href="articulos.html">Articulos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="nip07.html">Nip07</a></li>
                 </ul>
             </nav>
     `;

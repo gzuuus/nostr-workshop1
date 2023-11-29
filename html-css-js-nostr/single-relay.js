@@ -31,7 +31,7 @@ relay.on('error', (error) => {
     ]);
     // Mostramos un mensaje por consola cuando recibamos un evento
     sub.on('event', (event) => {
-      // console.log('Hemos recibido el evento que queríamos:', event);
+      console.log('Hemos recibido el evento que queríamos:', event);
       if (event.kind === 1) {
         tarjetaEventos(event);
       } else {

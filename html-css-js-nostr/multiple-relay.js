@@ -4,7 +4,7 @@ const pool = new window.NostrTools.SimplePool();
 let relays = ['wss://nos.lol', 'wss://relay.nostr.band']
 // Meodo get para obtener el ultimo evento publicado, del tipo perfil
 let lastEvent = await pool.get(relays, {
-  authors: ['40b9c85fffeafc1cadf8c30a4e5c88660ff6e4971a0dc723d5ab674b5e61b451'],
+  authors: ['7fa56f5d6962ab1e3cd424e758c3002b8665f7b0d8dcee9fe9e288d7751ac194'],
   kinds: [0],
 })
 tarjetaPerfil(lastEvent)
@@ -14,7 +14,7 @@ tarjetaPerfil(lastEvent)
    relays,
    [
      {
-       authors: ['40b9c85fffeafc1cadf8c30a4e5c88660ff6e4971a0dc723d5ab674b5e61b451'],
+       authors: ['7fa56f5d6962ab1e3cd424e758c3002b8665f7b0d8dcee9fe9e288d7751ac194'],
        kinds: [30023],
        limit: 10,
      },
@@ -24,6 +24,9 @@ tarjetaPerfil(lastEvent)
  sub.on('event', (event) => {
   // console.log(event)
    tarjetaEventos(event)
+ })
+ sub.on('eose', (eose) => {
+   console.log(eose)
  })
 function tarjetaEventos(event) {
   // Creamos un nuevo div en el DOM para la tarjeta

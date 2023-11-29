@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Agrega un event listener para el evento de clic en el botón
     signerButton.addEventListener('click', async function () {
-        try{
+        try {
         // Aquí puedes ejecutar la acción que deseas cuando se hace clic en el botón
         let user = await window.nostr.getPublicKey()
         const textArea = document.getElementById('contenido');
