@@ -1,4 +1,4 @@
-### Malaga nostr workshop
+### Nostr workshop
 
 Este repositorio sera usado para guiar el workshop
 Slides: [Canva](https://www.canva.com/design/DAF0-74i9po/e7EdaMzto2PfBdTDz5E_sg/view#1)
